@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Website</title>
+  <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/static/images/logoCubetech.png" alt="CubeTechWorld">
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+      <li><a href="{{ url_for('services') }}">Services</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>“Your Digital Masterpiece Starts Here”</h1>
+      <p>At CubeTechWorld (CTW), we specialize in designing modern, 
+        responsive websites that don’t just look great—but also help you connect with your clients, 
+        grow your online presence, and achieve business success.</p>
+        <p> We build smart, responsive, and high-performing websites, CRM & ERP systems, 
+      and SEO-optimized digital experiences that drive your business forward.</p>
+      <p>We craft professional, user-friendly websites that represent your brand and convert visitors into customers.</p>
+      <h2>Let’s Build Something Great Together</h2>
+    <p>Ready to take your digital presence to the next level? Connect with CubeTechWorld today.</p>
+    <a href="{{ url_for('contact') }}" class="btn glow">Contact Us</a>
+    <a href="{{ url_for('services') }}" class="btn">Get Started</a>
+      <!--<a href="#" class="btn-outline">Watch Intro</a>-->
+    </div>
+    <div class="hero-image">
+      <img src="/static/images/hero.jpg" alt="Business Image">
+    </div>
+  </section>
+   
+
+  
+  
+
+<footer class="fade-in">
+        <p>© 2025 CubeTechWorld | Your Partner in Digital Growth</p>
+    </footer>
+   
+<!-- Floating Chat Icon 
+<div class="chat-float" id="chat-float">💬</div>-->
+
+<!-- Chatbox 
+<div class="chatbox" id="chatbox">
+  <div class="chatbox-header">
+    Chat with us!
+    <span id="chatbox-close">✖</span>
+  </div>
+  <div class="chatbox-body">
+    <div class="messages" id="messages">
+      <div class="message bot">Hello! How can I help you? 😊</div>
+    </div>
+    <div class="typing-indicator" id="typing-indicator">Bot is typing...</div>
+    <div class="chat-input-container">
+      <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="sendMessage(event)">
+      <button onclick="sendButtonMessage()">➡️</button>
+    </div>
+  </div>
+</div>
+<script src="static/js/chatbox.js"></script>-->
+
+<!-- WhatsApp Floating Button -->
+<!--<a href="https://wa.me/919763072666" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat with us on WhatsApp">
+  <img src="/static/images/watsupctwfinal.png" alt="WhatsApp Chat">
+</a>-->
+<!-- Floating WhatsApp Button -->
+<div class="whatsapp-chat-container">
+  <div class="whatsapp-popup" id="whatsappPopup">
+    <div class="whatsapp-header">
+      <!--<img src="/static/images/finalCTW1.png" alt="WhatsApp" class="whatsapp-logo">-->
+      <span>Chat with us on WhatsApp</span>
+      <button class="close-btn" onclick="toggleWhatsapp()">×</button>
+    </div>
+    <div class="whatsapp-body">
+      <p>👋 Hi there! How can we help you today?</p>
+      <a href="https://wa.me/919763072666?text=Hi%20I%20need%20assistance%20from%20CubeTechWorld" 
+         target="_blank" class="whatsapp-chat-link">
+        Start Chat
+      </a>
+    </div>
+  </div>
+
+  <div class="whatsapp-float" onclick="toggleWhatsapp()">
+    <img src="/static/images/watsupctwfinal.png" alt="WhatsApp" class="whatsapp-icon">
+  </div>
+</div>
+
+   <script>
+  function toggleWhatsapp() {
+    const popup = document.getElementById("whatsappPopup");
+    popup.style.display = popup.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+
+</body>
+</html>

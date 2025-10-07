@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Website</title>
+  <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+  <link rel="stylesheet" href="static/css/styleser.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/static/images/logoCubetech.png" alt="CubeTechWorld">
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  
+<section class="services-hero">
+    <h1>🚀 Our Services</h1>
+    <p>Empowering Your Digital Journey with Innovative IT Solutions</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-container">
+    <div class="service-card">
+      <h2>🌐 Website Design & Development</h2>
+      <p>Responsive, user-friendly, and visually stunning websites crafted to showcase your brand identity.</p>
+      <ul>
+        <li>Corporate Websites</li>
+        <li>E-commerce Platforms</li>
+        <li>Custom Web Applications</li>
+        <li>Landing Pages</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>📱 Mobile App Development</h2>
+      <p>Intuitive and engaging apps to keep your customers connected across iOS and Android platforms.</p>
+      <ul>
+        <li>iOS & Android Apps</li>
+        <li>Cross-platform Solutions</li>
+        <li>UI/UX Optimized Interfaces</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>📊 Digital Marketing Solutions</h2>
+      <p>Grow your online visibility and reach the right audience with our digital marketing strategies.</p>
+      <ul>
+        <li>SEO (Search Engine Optimization)</li>
+        <li>Social Media Marketing</li>
+        <li>Google Ads & PPC Campaigns</li>
+        <li>Content Marketing</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h2>☁️ Cloud & IT Solutions</h2>
+      <p>Scalable and secure IT solutions to future-proof your business operations.</p>
+      <ul>
+        <li>Cloud Hosting & Migration</li>
+        <li>Data Backup & Security</li>
+        <li>IT Consulting</li>
+      </ul>
+    </div>
+<div class="service-card seo-card">
+    <h2>🔍 SEO (Search Engine Optimization)</h2>
+    <p>Boost your online visibility and drive organic traffic to your website with our expert SEO services.</p>
+    <ul>
+      <li>Keyword Research & Strategy</li>
+      <li>On-page & Technical SEO Optimization</li>
+      <li>High-quality Backlink Building</li>
+      <li>Local SEO for Businesses</li>
+      <li>Performance Analytics & Reporting</li>
+    </ul>
+  </div>
+
+  <!-- ✅ Added ERP Services -->
+  <div class="service-card erp-card">
+    <h2>🏢 ERP (Enterprise Resource Planning)</h2>
+    <p>Streamline your business operations with our custom ERP solutions built for efficiency and scalability.</p>
+    <ul>
+      <li>Custom ERP Software Development</li>
+      <li>Inventory & Supply Chain Management</li>
+      <li>Finance & Accounting Integration</li>
+      <li>HR & Payroll Systems</li>
+      <li>Analytics and Reporting Dashboards</li>
+    </ul>
+  </div>
+
+  <!-- ✅ Added CRM Services -->
+  <div class="service-card crm-card">
+    <h2>💼 CRM (Customer Relationship Management)</h2>
+    <p>Enhance your customer engagement and sales performance with our powerful CRM solutions.</p>
+    <ul>
+      <li>Lead & Opportunity Management</li>
+      <li>Customer Support Automation</li>
+      <li>Sales & Marketing Integration</li>
+      <li>Data-driven Insights & Reports</li>
+      <li>Custom CRM Development</li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+      <h2>🤝 Consulting & Support</h2>
+      <p>Expert advice and 24/7 support to ensure your business thrives digitally.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Let’s build something amazing together!</h2>
+    <p>📩 Get in touch with us today to transform your digital presence.</p>
+    <a href="/contact" class="cta-btn">Contact Us</a>
+  </section>
+  <footer>
+        <p>© 2025 CubeTechWorld | Your Partner in Digital Growth</p>
+    </footer>
+</body>
+</html>

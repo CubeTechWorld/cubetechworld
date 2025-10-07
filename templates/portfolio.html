@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - CubeTechWorld</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">
+      <img src="/static/images/logofinal.jpg" alt="CubeTechWorld">
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('aboutus') }}">About</a></li>
+      <li><a href="{{ url_for('services') }}">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Our Portfolio</h1>
+    <p>Some of our best work in website design, digital marketing, and tech solutions</p>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="filter-section">
+    <button class="filter-btn" onclick="filterSelection('all')">All</button>
+    <button class="filter-btn" onclick="filterSelection('web')">Web Design</button>
+    <button class="filter-btn" onclick="filterSelection('app')">App Development</button>
+    <button class="filter-btn" onclick="filterSelection('digital')">Digital Marketing</button>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio-grid">
+    <div class="portfolio-item web">
+      <img src="{{ url_for('static', filename='images/portfolio1.jpg') }}" alt="Web Project">
+      <h3>Corporate Website</h3>
+      <p>Responsive web design for a finance company</p>
+    </div>
+
+    <div class="portfolio-item app">
+      <img src="{{ url_for('static', filename='images/portfolio2.jpg') }}" alt="App Project">
+      <h3>Mobile App</h3>
+      <p>Cross-platform mobile app for e-commerce</p>
+    </div>
+
+    <div class="portfolio-item digital">
+      <img src="{{ url_for('static', filename='images/portfolio3.jpg') }}" alt="Digital Project">
+      <h3>SEO & Marketing</h3>
+      <p>SEO optimization for a retail brand</p>
+    </div>
+
+    <div class="portfolio-item web">
+      <img src="{{ url_for('static', filename='images/portfolio4.jpg') }}" alt="Web Project">
+      <h3>Startup Landing Page</h3>
+      <p>Clean, modern landing page for a startup</p>
+    </div>
+  </section>
+
+  <script>
+    // Portfolio filter
+    function filterSelection(category) {
+      let items = document.getElementsByClassName("portfolio-item");
+      if (category === "all") category = "";
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.display = items[i].className.indexOf(category) > -1 ? "block" : "none";
+      }
+    }
+    filterSelection("all"); // Default show all
+  </script>
+</body>
+</html>
