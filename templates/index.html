@@ -96,7 +96,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 100px;
-      background-color: #f9f9f9;
+      background-color: #0056ff;
     }
 
     .hero-text {
@@ -105,7 +105,7 @@
 
     .hero-text h1 {
       font-size: 2.5rem;
-      color: #203a43;
+      color: #ffffff;
     }
 
     .btn {
@@ -172,15 +172,17 @@
     <div class="hero-image">
       <img src="/static/images/hero.jpg" alt="Business Image">
     </div>
+    
+   
   </section>
    
 
-  
-  
-
-<footer class="fade-in">
+   <footer class="fade-in">
         <p>© 2025 CubeTechWorld | Your Partner in Digital Growth</p>
     </footer>
+  
+
+
    
 <!-- Floating Chat Icon 
 <div class="chat-float" id="chat-float">💬</div>-->
@@ -247,6 +249,16 @@
       setTimeout(() => (loader.style.display = "none"), 1000);
     });
   </script>
+<script>
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+</script>
 
 </body>
 </html>
